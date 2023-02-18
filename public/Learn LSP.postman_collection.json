@@ -1,0 +1,1188 @@
+{
+	"info": {
+		"_postman_id": "cce3e823-15db-42aa-98a9-5526c4d64861",
+		"name": "Learn LSP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20689061"
+	},
+	"item": [
+		{
+			"name": "Kategori",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/kategori",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"kategori"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/user/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode",
+									"value": "ENS 2",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Ensiklopedia",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/kategori",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"kategori"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode",
+									"value": "HRR",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Horor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/kategori/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"kategori",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/kategori/6",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"kategori",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buku",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/buku",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"buku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/buku/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"buku",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "judul",
+									"value": "Belajar API",
+									"type": "text"
+								},
+								{
+									"key": "kategori_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "penerbit_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2023",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "9761026793032",
+									"type": "text"
+								},
+								{
+									"key": "pengarang",
+									"value": "Dhani",
+									"type": "text"
+								},
+								{
+									"key": "j_buku_baik",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "j_buku_buruk",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/buku",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"buku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "judul",
+									"value": "Belajar API",
+									"type": "text"
+								},
+								{
+									"key": "kategori_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "penerbit_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2023",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "9761026793032",
+									"type": "text"
+								},
+								{
+									"key": "pengarang",
+									"value": "Dhani",
+									"type": "text"
+								},
+								{
+									"key": "j_buku_baik",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "j_buku_buruk",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/buku/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"buku",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/buku/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"buku",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Penerbit",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/penerbit",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"penerbit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/penerbit/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"penerbit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode",
+									"value": "pnb",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Penerbit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/penerbit",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"penerbit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode",
+									"value": "pnbt",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Penerbit Update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/penerbit/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"penerbit",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/penerbit/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"penerbit",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Peminjaman",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/peminjaman",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"peminjaman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/peminjaman/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"peminjaman",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "buku_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_peminjaman",
+									"value": "2023-01-06",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_pengembalian",
+									"value": "2023-01-20",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_buku_saat_dipinjam",
+									"value": "baik",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_buku_saat_dikembalikan",
+									"value": "baik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/peminjaman",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"peminjaman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "buku_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_peminjaman",
+									"value": "2023-01-06",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_pengembalian",
+									"value": "2023-01-26",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_buku_saat_dipinjam",
+									"value": "baik",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_buku_saat_dikembalikan",
+									"value": "baik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/peminjaman/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"peminjaman",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/peminjaman/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"peminjaman",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pesan",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pesan",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pesan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pesan/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pesan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "penerima_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "pengirim_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "Pesan Baru",
+									"type": "text"
+								},
+								{
+									"key": "isi",
+									"value": "2023-01-20 Pesan",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "terkirim",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_kirim",
+									"value": "2023-01-20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pesan",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pesan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "penerima_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "pengirim_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "Pesan Baru Updated",
+									"type": "text"
+								},
+								{
+									"key": "isi",
+									"value": "2023-01-20 Pesan",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "terkirim",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_kirim",
+									"value": "2023-01-20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pesan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pesan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pesan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pesan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pemberitahuan",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isi",
+									"value": "test buat pemberithaun",
+									"type": "text"
+								},
+								{
+									"key": "level_user",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "dibaca",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isi",
+									"value": "Update Jalan",
+									"type": "text"
+								},
+								{
+									"key": "level_user",
+									"value": "2023-01-20",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "terkirim",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Identitas",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/identitas",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"identitas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/identitas/2",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"identitas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isi",
+									"value": "test buat pemberithaun",
+									"type": "text"
+								},
+								{
+									"key": "level_user",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "dibaca",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isi",
+									"value": "Update Jalan",
+									"type": "text"
+								},
+								{
+									"key": "level_user",
+									"value": "2023-01-20",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "terkirim",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/pemberitahuan/3",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"pemberitahuan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth / Users",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Bmb",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/login",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/user",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "Kevin De Bruyne",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Kevin",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/user",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "passwordbaru",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "New Admin ",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "user 14234",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"description": "required",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{laravel_api}}/admin",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{laravel_api}}/user/5",
+							"host": [
+								"{{laravel_api}}"
+							],
+							"path": [
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
